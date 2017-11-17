@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'boostrap@3' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData boostrap@3
+8 silly fetchNamedPackageData boostrap
+9 silly mapToRegistry name boostrap
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/boostrap
+13 verbose request uri https://registry.npmjs.org/boostrap
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 15:33:57
+16 verbose request id 06ce8ad1b333a099
+17 verbose etag W/"59dea031-ba8"
+18 verbose lastModified Wed, 11 Oct 2017 22:50:25 GMT
+19 http request GET https://registry.npmjs.org/boostrap
+20 http 304 https://registry.npmjs.org/boostrap
+21 verbose headers { date: 'Thu, 16 Nov 2017 14:33:59 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: 'W/"59dea031-ba8"',
+21 verbose headers   age: '78',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-lcy19221-LCY',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1510842839.435189,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding, Accept' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Thu, 16 Nov 2017 14:33:59 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: 'W/"59dea031-ba8"',
+22 silly get     age: '78',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-lcy19221-LCY',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1510842839.435189,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding, Accept' } ]
+23 verbose etag https://registry.npmjs.org/boostrap from cache
+24 verbose get saving boostrap to /home/derric/.npm/registry.npmjs.org/boostrap/.cache.json
+25 silly fetchPackageMetaData Error: No compatible version found: boostrap@3
+25 silly fetchPackageMetaData Valid install targets:
+25 silly fetchPackageMetaData 2.0.0, 1.0.0
+25 silly fetchPackageMetaData
+25 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+25 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+25 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+25 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+25 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+25 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+25 silly fetchPackageMetaData  error for boostrap@3 [Error: No compatible version found: boostrap@3
+25 silly fetchPackageMetaData Valid install targets:
+25 silly fetchPackageMetaData 2.0.0, 1.0.0
+25 silly fetchPackageMetaData ]
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Starting
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: No compatible version found: boostrap@3
+31 verbose stack Valid install targets:
+31 verbose stack 2.0.0, 1.0.0
+31 verbose stack
+31 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+31 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+31 verbose stack     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+31 verbose stack     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+31 verbose stack     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+31 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+32 verbose cwd /home/derric/Bureau/projet/projectAli meteo/meteo
+33 error Linux 4.8.0-53-generic
+34 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "boostrap@3"
+35 error node v4.2.6
+36 error npm  v3.5.2
+37 error No compatible version found: boostrap@3
+37 error Valid install targets:
+37 error 2.0.0, 1.0.0
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]

@@ -1,0 +1,50 @@
+
+
+<!-- <button ng-click=success(pos)>find your location</button> -->
+<div>
+	<fieldset>
+	<legend>Meteo App </legend>
+Votre position actuelle est : <br>
+
+  Pays : <a classe= "btn-lg btn-primary">{{Country}} </a><br>
+
+  Region : <a classe= "btn-lg btn-primary">{{Region}} </a><br>
+
+  Ville : <a classe= "btn-lg btn-primary">{{Ville}} </a><br>
+  <hr>
+
+Temperature  : <a classe= "btn-lg btn-primary" ng-init="tempVal=true" ng-show="tempVal" ng-click="tempVal=!tempVal">{{Meteo}} °F </a>
+
+<a classe= "btn-lg btn-primary" ng-show="!tempVal" ng-click="tempVal=!tempVal">{{temperature}}  °C </a><br>
+
+Date and Time : <a classe= "btn-lg btn-primary">{{Time * 1000 | date:'medium'}} </a> <br>
+<hr>
+
+Summary : <a classe= "btn-lg btn-primary">{{summary}} </a><br>
+<hr>
+High temperature:  {{temperatureHigh}} <br>
+High temperature in Celsius:  {{temperatureHighc}} <br>
+Low temperature:  {{temperaturelow}} <br>
+Low temperaturein Celsius:  {{temperaturelowc}} <br>
+SunriseTime:  {{sunriseTime * 1000 | date:'HH:mm'}} <br>
+SunsetTime : {{sunsetTime * 1000 | date:'HH:mm'}} <br>
+Humidity:  {{humidity}} <br>
+WindSpeed : {{windSpeed}} <br>
+Precip Probability : {{precipProbability}} <br>
+<hr>
+<div>
+
+	<form>
+					<fieldset>
+						<legend>Cherche par city </legend>
+
+								<label>City Name</label>
+								<input placeholder="e.g. Paris, France">
+					</fieldset>
+
+					<button>Get Weather</button>
+				</form>
+</div>
+
+</fieldset>
+</div>
